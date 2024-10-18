@@ -1,0 +1,167 @@
+/* General Container Styling */
+.quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #007BFF;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  .correct {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .incorrect {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Question Card */
+  .question-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  h4 {
+    font-size: 1.6rem;
+    color: #007BFF;
+    margin-bottom: 15px;
+  }
+  
+  /* Answer Options */
+  .answer-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .answer-button {
+    padding: 15px;
+    border: 2px solid #007BFF;
+    background-color: #fff;
+    color: #007BFF;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .answer-button:hover {
+    background-color: #007BFF;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  button.answer-button.correct {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+  }
+
+  button.answer-button.incorrect {
+    background-color: red;
+    color: #fff;
+    border-color: red
+  } 
+  
+  .answer-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  /* Quiz Completion Screen */
+  .quiz-container h2 {
+    font-size: 2rem;
+    color: #28a745;
+  }
+  
+  .quiz-container p {
+    font-size: 1.3rem;
+    color: #333;
+  }
+  
+  .restart-button {
+    padding: 12px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .restart-button:hover {
+    background-color: #0056b3;
+  }
+
+  /* General Next Button Styling */
+.next-button {
+    padding: 12px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover and Active States */
+  .next-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15
+  
+  
+  /* Add Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .quiz-container,
+  .question-card {
+    animation: fadeIn 0.5s ease;
+  }
+  
